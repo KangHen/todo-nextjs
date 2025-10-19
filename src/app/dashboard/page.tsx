@@ -47,13 +47,13 @@ export default function DashboardPage() {
           <p className="text-gray-600">Welcome back, {user?.name || user?.username}!</p>
         </div>
         <div className="flex space-x-2">
-          <Link href="/todos/create">
+          <Link href="/todos">
             <Button>
               <Plus className="mr-2 h-4 w-4" />
               New Todo
             </Button>
           </Link>
-          <Link href="/categories/create">
+          <Link href="/categories">
             <Button variant="outline">
               <Plus className="mr-2 h-4 w-4" />
               New Category

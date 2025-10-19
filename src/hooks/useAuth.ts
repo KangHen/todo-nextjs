@@ -26,7 +26,6 @@ export const useAuth = () => {
   }, [initializeFromStorage]);
 
   useEffect(() => {
-    // If we have a token but no user, try to get current user
     if (token && !user && !isLoading) {
       setLoading(true);
       authService

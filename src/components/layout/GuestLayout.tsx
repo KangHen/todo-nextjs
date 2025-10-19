@@ -41,7 +41,7 @@ export default function GuestLayout({ children }: GuestLayoutProps) {
           </div>
         </div>
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-          <div className="bg-white py-8 px-4 shadow-lg sm:rounded-lg sm:px-10">
+          <div className="py-8 px-4 sm:rounded-lg sm:px-10">
             {children}
           </div>
         </div>

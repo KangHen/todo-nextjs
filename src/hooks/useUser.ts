@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useAuthStore } from "@/store/authStore";
 import { userService } from "@/services/userService";
 import { User } from "@/types";

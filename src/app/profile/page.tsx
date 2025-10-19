@@ -35,7 +35,7 @@ export default function ProfilePage() {
       });
       getUserStats().then(setUserStats);
     }
-  }, [user, getUserStats]);
+  }, [user]);
 
   const handleEdit = () => {
     setIsEditing(true);

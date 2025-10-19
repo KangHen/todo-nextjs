@@ -65,7 +65,6 @@ export const useAuthStore = create<AuthStore>()(
       },
 
       initializeFromStorage: () => {
-        // Initialize auth state from localStorage service
         const storedUser = localStorageService.getCurrentUser();
         const storedToken = localStorageService.getAuthToken();
 
@@ -94,7 +93,6 @@ export const useAuthStore = create<AuthStore>()(
         isAuthenticated: state.isAuthenticated,
       }),
       onRehydrateStorage: () => (state) => {
-        console.log("Rehydrating auth store from storage", state);
         if (state) {
           state.initializeFromStorage();
         }
